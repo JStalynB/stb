@@ -23,167 +23,196 @@
     }
   </style>
 </head>
+
 <body>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <!-- <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <!-- Sidebar (hidden by default) -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+    style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <!-- <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a> -->
-</nav>
+  </nav>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <!-- <div class="w3-right w3-padding-16">Mail</div> -->
-    <div class="w3-center w3-padding-16">STB</div>
-  </div>
-</div>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img
-        src="https://www.alcarrito.com/media/catalog/product/d/_/d_nq_np_890705-mco44552016052_012021-o.jpg?width=900&height=900&canvas=900,900&optimize=medium&bg-color=255,255,255&fit=bounds"
-        alt="Sandwich" style="width:100%">
-      <h3>Audífonos Samsung</h3>
-      <p>Audífonos de entrada auxiliar HS330</p>
-      <p>$1($0.95)</p>
-    </div>
-    <div class="w3-quarter">
-
-      <img
-        src="https://cdn.discordapp.com/attachments/726945708023742496/1125797054413807726/1c9ae124-1b9e-40f5-b576-909f9936ca78.2e92e0c7c8a86419b263a86799279679.webp"
-        alt="Steak" style="width:100%">
-      <h3>A6S pro MiPods</h3>
-      <p>audífnos bluettooh</p>
-      <p>$7.50 ($6.00)</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://compurio-ventas.com/wp-content/uploads/2021/03/HP-11.jpg" alt="Cherries" style="width:100%">
-      <h3>TINTA PRINTER IMPRESORA HP (GT53)</h3>
-    
-      <p>$10.00($8.00)</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://cdn.discordapp.com/attachments/726945708023742496/1125819772425216102/M66-2.jpg"
-        alt="Pasta and Wine" style="width:100%">
-      <h3>JEDEL M66 Light Mouse</h3>
-      <p>Mause gamer multicolor USB, cable 1.35m.</p>
-      <p>$5.00 ($3.50)</p>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="https://cdn.discordapp.com/attachments/726945708023742496/1126127364062052352/MejorCompra-e95bb7c5-a637-486e-934e-15fbcf6c47f0.jpg" alt="Popsicle" style="width:100%">
-      <h3>Audífonos Samsung S10</h3>
-      <p>Audifonos Ear-in sports ergonómicos</p>
-      <p>$3.50 ($2.15)</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://cdn.discordapp.com/attachments/726945708023742496/1126128162670121032/581202010110141230980.jpg" alt="Salmon" style="width:100%">
-      <h3>Cargador ultra rápido</h3>
-      <p>Cargador tipo V8 - tipo C</p>
-      <p>$7.00 ($3.10)</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://cdn.discordapp.com/attachments/726945708023742496/1126129024045953116/701_3svyul.jpg" alt="Sandwich" style="width:100%">
-      <h3>Cables USB V8</h3>
-      <p>Cable USB genérico</p>
-      <p>$1.00 ($0.65)</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://cdn.discordapp.com/attachments/726945708023742496/1126131641262297148/image.png" alt="Croissant" style="width:100%">
-      <h3>Cable USB V8 metálico</h3>
-      <p>Cable USB carga rápida v8</p>
-      <p>$3.00 ($1.25)</p>
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+      <!-- <div class="w3-right w3-padding-16">Mail</div> -->
+      <div class="w3-center w3-padding-16">STB</div>
     </div>
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter">
+        <img
+          src="https://www.alcarrito.com/media/catalog/product/d/_/d_nq_np_890705-mco44552016052_012021-o.jpg?width=900&height=900&canvas=900,900&optimize=medium&bg-color=255,255,255&fit=bounds"
+          alt="Sandwich" style="width:100%">
+        <h3>Audífonos Samsung</h3>
+        <p>Audífonos de entrada auxiliar HS330</p>
+        <p>Precio STB $0.95</p>
+        <p>precio normal $1.50</p>
+      </div>
+      <div class="w3-quarter">
+
+        <img
+          src="https://cdn.discordapp.com/attachments/726945708023742496/1125797054413807726/1c9ae124-1b9e-40f5-b576-909f9936ca78.2e92e0c7c8a86419b263a86799279679.webp"
+          alt="Steak" style="width:100%">
+        <h3>A6S pro MiPods</h3>
+        <p>audífnos bluettooh</p>
+        <p>Precio STB $6.00 </p>
+        <p>precio normal $8.00</p>
+
+
+      </div>
+      <div class="w3-quarter">
+        <img src="https://compurio-ventas.com/wp-content/uploads/2021/03/HP-11.jpg" alt="Cherries" style="width:100%">
+        <h3>TINTA PRINTER IMPRESORA HP (GT53)</h3>
+
+        <p>Precio STB $8.00</p>
+        <p>precio normal $10.00</p>
+
+      </div>
+      <div class="w3-quarter">
+        <img src="https://cdn.discordapp.com/attachments/726945708023742496/1125819772425216102/M66-2.jpg"
+          alt="Pasta and Wine" style="width:100%">
+        <h3>JEDEL M66 Light Mouse</h3>
+        <p>Mause gamer multicolor USB, cable 1.35m.</p>
+        <p>Precio STB $3.50</p>
+        <p>precio normal $5.00</p>
+
+      </div>
     </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-quarter">
+        <img
+          src="https://cdn.discordapp.com/attachments/726945708023742496/1126127364062052352/MejorCompra-e95bb7c5-a637-486e-934e-15fbcf6c47f0.jpg"
+          alt="Popsicle" style="width:100%">
+        <h3>Audífonos Samsung S10</h3>
+        <p>Audifonos Ear-in sports ergonómicos</p>
+        <p>Precio STB $2.15</p>
+        <p>precio normal $3.50</p>
+
+      </div>
+      <div class="w3-quarter">
+        <img
+          src="https://cdn.discordapp.com/attachments/726945708023742496/1126128162670121032/581202010110141230980.jpg"
+          alt="Salmon" style="width:100%">
+        <h3>Cargador ultra rápido</h3>
+        <p>Cargador tipo V8 - tipo C</p>
+        <p>Precio STB $3.10</p>
+        <p>precio normal $7.00</p>
+
+      </div>
+      <div class="w3-quarter">
+        <img src="https://cdn.discordapp.com/attachments/726945708023742496/1126129024045953116/701_3svyul.jpg"
+          alt="Sandwich" style="width:100%">
+        <h3>Cables USB V8</h3>
+        <p>Cable USB genérico</p>
+        <p>Precio STB $0.65</p>
+        <p>precio normal $1.00</p>
+
+      </div>
+      <div class="w3-quarter">
+        <img src="https://cdn.discordapp.com/attachments/726945708023742496/1126131641262297148/image.png"
+          alt="Croissant" style="width:100%">
+        <h3>Cable USB V8 metálico</h3>
+        <p>Cable USB carga rápida v8</p>
+        <p>Precio STB $1.25</p>
+        <p>precio normal $3.00</p>
+
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+
+    <hr id="about">
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32 w3-center">
+      <h3>STB</h3><br>
+      <div class="w3-padding-32">
+        <h4><b>Somos quienes somos!</b></h4>
+        <h6><i>Pasion real en tí, pensamos en tí emprendedor</i></h6>
+        <p>Envíos a domicilio, un placer atenderlos, productos con la máxima rentabilidad para usted.
+        </p>
+      </div>
+
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <div class="w3-center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.808333624788!2d-78.50637422499318!3d-0.12819543545689616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5853d391cf96d%3A0xb9225dd69ea75d32!2sCiber%20Stb!5e0!3m2!1ses-419!2sec!4v1689195927809!5m2!1ses-419!2sec"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="w3-row-padding w3-padding-32">
+      <div class="w3-third">
+        <h3>Ubicación </h3>
+        <p>Ciber Stb, Angel Ludeña, Quito 170132 </p>
+      </div>
+
+      <div class="w3-third">
+        <h3>Contacto</h3>
+        <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">
+
+            <span class="w3-large  fa-whatsapp">099 575 3648</span><br>
+            <span></span>
+          </li>
+          <li class="w3-padding-16">
+            <i class="fa fa-whatsapp" style="font-size:48px;color:red"></i>
+
+            <span class="w3-large">0995753648 </span><br>
+            <span>Necesitas una web así?</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-serif">
+        <h3>Horario de atención</h3>
+        <p>lun: 6:20–19:15</p>
+        <p>mar: 6:20–19:15</p>
+        <p> mié: 6:20–19:15</p>
+        <p> jue: 6:20–19:15</p>
+        <p> vie: 6:20–19:15</p>
+        <p> sáb: 9:00–18:00</p>
+        <p> dom: 11:00–17:00</p>
+      </div>
+    </footer>
+
+    <!-- End page content -->
   </div>
-  
-  <hr id="about">
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>STB</h3><br>
-    <div class="w3-padding-32">
-      <h4><b>Somos quienes somos!</b></h4>
-      <h6><i>Pasion real en tí, pensamos en tí emprendedor</i></h6>
-      <!-- <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p> -->
-    </div>
-  </div>
-  <hr>
-  
-  <!-- Footer -->
-  <div class="w3-center">
-  <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.808333624788!2d-78.50637422499318!3d-0.12819543545689616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5853d391cf96d%3A0xb9225dd69ea75d32!2sCiber%20Stb!5e0!3m2!1ses-419!2sec!4v1689195927809!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>Ubicación </h3>
-      <p>Ciber Stb, Angel Ludeña, Quito 170132 </p>
-    </div>
-  
-    <div class="w3-third">
-      <h3>Contacto</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
 
-          <span class="w3-large  fa-whatsapp">099 575 3648</span><br>
-          <span></span>
-        </li>
-        <li class="w3-padding-16">
-          <i class="fa fa-whatsapp" style="font-size:48px;color:red"></i>
-
-          <span class="w3-large">0995753648 </span><br>
-          <span>Necesitas una web así?</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-serif">
-      <h3>Horario de atención</h3>
-      <p>lun:	6:20–19:15</p>
-        <p>mar:	6:20–19:15</p>
-          <p>  mié:	6:20–19:15</p>
-            <p>  jue:	6:20–19:15</p>
-              <p> vie:	6:20–19:15</p>
-                <p> sáb:	9:00–18:00</p>
-                  <p> dom:	11:00–17:00</p>
-    </div>
-  </footer>
-
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
 
 </body>
+
 </html>
