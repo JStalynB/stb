@@ -82,11 +82,20 @@ body {
     <a href="#clients">Clients</a>
   
     <button class="dropdown-btn">Solicitudes <i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-container" style="color: white;" onclick="abrirEnlaces()">
+    <div class="dropdown-container" style="color: white;" >
       
-         <span>Solicitud para sacar la carpeta con todos los documentos</span>
+         <span onclick="abrirEnlaces()">Solicitud para sacar la carpeta con todos los documentos</span>
+         <br>
+         <br>
+         <span  onclick="abrirEnlacesJustificativos()">Solicitud para justificar faltas</span>
       
     </div>
+    <div class="dropdown-container" style="color: white;">
+      
+      <span>Solicitud para justificar faltas</span>
+   
+      </div>
+    
   
     <button class="dropdown-btn">Pagar con tarjeta de crédito<i class="fa fa-caret-down"></i></button>
     <div class="dropdown-container">
@@ -127,6 +136,17 @@ for (i = 0; i < dropdown.length; i++) {
 function abrirEnlaces(){
   window.open("https://appsj.funcionjudicial.gob.ec/documentosExtraviados/publico/formulario.jsf");
   window.open("https://docs.google.com/document/d/1HL4vYEd1YoOtoS2H-q0OPbyhxmE-4b0oe86ir3rlJao/edit?usp=sharing");
+  if (ventana1 && ventana2) {
+    ventana1.focus();
+    ventana2.focus();
+} else {
+    alert('No se pudieron abrir las ventanas emergentes.');
+}
+}
+
+function abrirEnlacesJustificativos(){
+  window.open("https://appsj.funcionjudicial.gob.ec/documentosExtraviados/publico/formulario.jsf");
+  window.open("https://docs.google.com/document/d/12eYFjFYA-F73fNYXF0-wqTQT1SPYIBkZpaGXGpbte7s/edit?usp=sharing");
   if (ventana1 && ventana2) {
     ventana1.focus();
     ventana2.focus();
