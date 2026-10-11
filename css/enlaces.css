@@ -1,0 +1,50 @@
+/* Centro de trámites y tutoriales (enlaces.html) */
+:root { --ancho-menu: 230px; }
+
+/* --- Estructura: menú lateral + contenido --- */
+.menu {
+  position: fixed; top: var(--alto-topbar); bottom: 0; left: 0; z-index: 15; width: var(--ancho-menu);
+  padding: 1rem; background: #111827; display: flex; flex-direction: column; gap: .25rem;
+}
+.menu a { padding: .6rem .8rem; border-radius: 8px; color: #cbd5e1; text-decoration: none; font-weight: 600; }
+.menu a:hover { background: #1f2937; color: #fff; }
+.menu hr { width: 100%; border: 0; border-top: 1px solid #374151; margin: .5rem 0; }
+.contenido { margin-left: var(--ancho-menu); padding: 1.5rem; max-width: 1000px; }
+.contenido section { margin-bottom: 2.5rem; }
+#btnMenu { display: none; border: 0; background: none; font-size: 1.6rem; cursor: pointer; }
+.buscador { margin-left: auto; width: min(320px, 50%); padding: .5rem .8rem; border: 1px solid var(--borde); border-radius: 10px; font: inherit; }
+
+/* --- Tarjetas de enlaces --- */
+.acciones { display: flex; flex-direction: column; gap: .5rem; margin-top: .75rem; }
+.card-tutorial { text-align: left; font: inherit; color: inherit; cursor: pointer; }
+.card-tutorial:hover:not(:disabled) { border-color: var(--primario); }
+.card-tutorial:disabled { opacity: .6; cursor: default; }
+.card-tutorial small { color: var(--primario); font-weight: 700; }
+
+/* --- Visor paso a paso --- */
+.visor { background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio); padding: 1.25rem; }
+.btn-link { background: none; border: 0; color: var(--primario); font: inherit; font-weight: 600; cursor: pointer; padding: 0 0 .75rem; }
+.progreso { height: 8px; border-radius: 99px; background: var(--borde); overflow: hidden; margin: .75rem 0 1.25rem; }
+.progreso span { display: block; height: 100%; background: var(--primario); transition: width .25s; }
+.paso { display: grid; gap: 1.5rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); align-items: start; }
+.paso-num { color: var(--primario); font-weight: 700; font-size: .9rem; text-transform: uppercase; }
+.consejo { background: #fef9c3; border-radius: 10px; padding: .6rem .8rem; font-size: .95rem; }
+.paso-img { border: 1px solid var(--borde); border-radius: 10px; padding: 0; overflow: hidden; background: #f1f5f9; cursor: zoom-in; }
+.paso-img img { width: 100%; max-height: 65vh; object-fit: contain; }
+.paso-img small { display: block; padding: .3rem; color: var(--texto-suave); }
+.nav-pasos { display: flex; justify-content: space-between; margin-top: 1.25rem; }
+
+dialog#zoom { padding: 0; border: 0; border-radius: var(--radio); max-width: 95vw; background: transparent; }
+dialog#zoom::backdrop { background: rgb(0 0 0 / .75); }
+dialog#zoom img { max-height: 92vh; border-radius: var(--radio); cursor: zoom-out; }
+
+/* --- Móvil: el menú pasa a ser desplegable --- */
+@media (max-width: 800px) {
+  #btnMenu { display: block; }
+  .menu { transform: translateX(-100%); transition: transform .2s; }
+  body.menu-abierto .menu { transform: none; }
+  .contenido { margin-left: 0; padding: 1rem; }
+  .paso { grid-template-columns: 1fr; }
+  .buscador { width: 100%; }
+}
+.paso p { white-space: pre-line; overflow-wrap: anywhere; }

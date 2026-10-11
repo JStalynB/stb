@@ -1,0 +1,47 @@
+/* ===== Tokens ===== */
+:root {
+  --primario: #4f46e5;
+  --primario-oscuro: #3730a3;
+  --texto: #1e293b;
+  --texto-suave: #64748b;
+  --fondo: #f8fafc;
+  --superficie: #fff;
+  --borde: #e2e8f0;
+  --acento: #16a34a;
+  --radio: 14px;
+  --sombra: 0 1px 3px rgb(0 0 0 / .08);
+  --alto-topbar: 60px;
+}
+
+/* ===== Reset y base ===== */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--alto-topbar) + 16px); }
+body { margin: 0; font: 16px/1.5 Karma, system-ui, sans-serif; color: var(--texto); background: var(--fondo); }
+img { max-width: 100%; display: block; }
+h1, h2, h3, h4 { line-height: 1.2; margin: 0 0 .5rem; }
+p { margin: 0 0 .75rem; }
+a { color: var(--primario); }
+
+/* ===== Componentes compartidos ===== */
+.topbar {
+  position: sticky; top: 0; z-index: 20; height: var(--alto-topbar);
+  display: flex; align-items: center; gap: 1rem; padding: 0 1rem;
+  background: var(--superficie); border-bottom: 1px solid var(--borde);
+}
+.brand { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--texto); }
+.topbar nav { margin-left: auto; display: flex; gap: 1rem; }
+.topbar nav a { text-decoration: none; font-weight: 600; }
+
+.btn {
+  display: inline-block; padding: .55rem 1rem; border: 1px solid var(--primario); border-radius: 10px;
+  background: var(--primario); color: #fff; font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.btn:hover:not(:disabled) { background: var(--primario-oscuro); }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+.btn-sec { background: var(--superficie); color: var(--primario); }
+.btn-sec:hover:not(:disabled) { background: #eef2ff; }
+
+.badge { display: inline-block; padding: .1rem .6rem; margin-bottom: .5rem; border-radius: 99px; background: #e0e7ff; color: var(--primario-oscuro); font-size: .8rem; font-weight: 600; }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.card { background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio); padding: 1.25rem; box-shadow: var(--sombra); }
