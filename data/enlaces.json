@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pago-1",
+    "titulo": "Plataforma de Pagos",
+    "categoria": "Pagos",
+    "descripcion": "Acceso directo para realizar el pago de servicios.",
+    "url": "https://ejemplo.com/pagos",
+    "icono": "💳"
+  },
+  {
+    "id": "solicitud-1",
+    "titulo": "Formulario de Solicitudes",
+    "categoria": "Solicitudes",
+    "descripcion": "Portal para crear una nueva solicitud de soporte.",
+    "url": "https://ejemplo.com/solicitudes",
+    "icono": "📝"
+  }
+]
