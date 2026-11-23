@@ -157,5 +157,15 @@ Hazlo hasta terminar todas las hojas.`,
         detalle: "Cuando ya no queden hojas por copiar, presiona la tecla numeral (#) del teclado para confirmar y que se impriman las copias.",
         consejo: "Al terminar, retira las copias de la bandeja y tu última hoja original del cristal." },
     ] },
+      // TODO: completar pasos y capturas.
+  { id: "Revision-vehicular", titulo: "Revisión vehicular", categoria: "Servicios",
+    descripcion: "OBLIGATORIO: ya debe de haber pagado todo", pasos: [
+      { titulo: "Selecciona el servicio", imagen: "img/RevisionVehicular/1-seleccionar-servicio.png",
+        consejo: "OBLIGATORIO: ya debe de haber pagado todo",
+      detalle: "ir a https://web.amt.gob.ec/web/citaPrevia/#/home",
+      }
+    ] },
+    
+
 
 ];
